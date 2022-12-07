@@ -5,10 +5,11 @@
   </div>
 </template>
 
+
 <script setup>
   const {id} = useRoute().params; //pega um dos parâmetros de rota
+  
+  definePageMeta({
+    layout: "products"
+  });
 </script>
-
-<style scoped>
-
-</style>

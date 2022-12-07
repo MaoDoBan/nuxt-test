@@ -7,7 +7,6 @@
 </template>
 
 
-
 <style scoped>
   h2 {
     margin-bottom: 20px;
