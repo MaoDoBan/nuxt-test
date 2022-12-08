@@ -1,18 +1,18 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <h2><NuxtLink to="/"> Ban Shop </NuxtLink></h2>
-        <ul>
-          <li><NuxtLink to="/">         Home     </NuxtLink></li>
-          <li><NuxtLink to="/about">    About    </NuxtLink></li>
-          <li><NuxtLink to="/products"> Products </NuxtLink></li>
+    <header class="shadow-sm bg-white">
+      <nav class="container mx-auto p-4 flex justify-between">
+        <NuxtLink to="/" class="font-bold">Ban Shop</NuxtLink>
+        <ul class="flex gap-4">
+          <li><NuxtLink to="/">      Home  </NuxtLink></li>
+          <li><NuxtLink to="/about"> About </NuxtLink></li>
+          <li><NuxtLink to="/products" class="btn"> Products </NuxtLink></li>
         </ul>
       </nav>
     </header>
 
     <!-- exibe o conteúdo da página -->
-    <div>
+    <div class="container mx-auto p-4">
       <slot/>
     </div>
   </div>
