@@ -1,12 +1,19 @@
 <template>
   <div>
-    <p>Products</p>
+    <div class="grid grid-cols-4 gap-5">
+      <div v-for="p in products">
+        <NuxtLink :to="`/products/${p.id}`">{{ p.title }}</NuxtLink>
+      </div>
+    </div>
   </div>
 </template>
 
 
-<script scoped>
+<script setup>
   definePageMeta({
     layout: "products"
   });
+
+  //fetch products - meio que ta renomeando data -> products
+  const {data: products} = await useFetch("https://fakestoreapi.com/products");
 </script>
