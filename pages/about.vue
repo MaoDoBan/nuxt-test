@@ -8,8 +8,7 @@
 </template>
 
 <script setup>
-  const {data} = await useFetch("/api/ban");
-  console.log(data);
+  const {data} = await useFetch("/api/ban?nome=Salgado"); //get
 </script>
 
 <style scoped>

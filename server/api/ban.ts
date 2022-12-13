@@ -1,5 +1,9 @@
 export default defineEventHandler((event) => {
+
+  //handle query params
+  const {nome} = getQuery(event);
+
   return {
-    message: "Funcionou!"
+    message: `Vou banir: ${nome}`
   };
 });
