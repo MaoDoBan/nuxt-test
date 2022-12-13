@@ -8,7 +8,11 @@
 </template>
 
 <script setup>
-  const {data} = await useFetch("/api/ban?nome=Salgado"); //get
+  //const {data} = await useFetch("/api/ban?nome=Salgado"); //get
+  const {data} = await useFetch("/api/ban?nome=Salgado", {
+    method: "post",
+    body: {tempo: 30}
+  });
 </script>
 
 <style scoped>
