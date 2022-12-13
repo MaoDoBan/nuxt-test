@@ -16,4 +16,11 @@
 
   //fetch products - meio que ta renomeando data -> products
   const {data: products} = await useFetch("https://fakestoreapi.com/products");
+
+  useHead({
+    title: "Ban Shop | Produtos",
+    meta: [
+      {name: "description", content: "Nuxt 3 Products"}
+    ]
+  });
 </script>
